@@ -1,0 +1,38 @@
+---
+layout: landing
+---
+
+import { HomePage } from 'vocs/components'
+
+<HomePage.Root>
+  <HomePage.Logo />
+  <HomePage.Tagline>Verify-immutable tools for Ethereum developers</HomePage.Tagline>
+  <HomePage.InstallPackage name="@dsuite/dmap" type="install" />
+  <HomePage.Description>
+      <div className="text-left">
+          <h3 className="font-bold text-lg mb-2">dmap is:</h3>
+          <ul className="list-disc pl-5 space-y-4">
+              <li>
+                  <h4 className="text-md">Simple.</h4>
+                  <p className="mt-1">Map a human-readable name to a value; nothing more.</p>
+              </li>
+              <li>
+                  <h4 className="text-md">Safe.</h4>
+                  <p className="mt-1">Auditable, user-verifiable and dependency-free.</p>
+              </li>
+              <li>
+                  <h4 className="text-md">Free.</h4>
+                  <p className="mt-1">Open, extensible public good; no rent extraction.</p>
+              </li>
+              <li>
+                  <h4 className="text-md">Forever.</h4>
+                  <p className="mt-1">Opt-in immutability for `:anyname`.</p>
+              </li>
+          </ul>
+      </div>
+  </HomePage.Description>
+  <HomePage.Buttons>
+    <HomePage.Button href="/getting-started" variant="accent">Get started</HomePage.Button>
+    <HomePage.Button href="https://github.com/blackbird-merula/dsuite">GitHub</HomePage.Button>
+  </HomePage.Buttons>
+</HomePage.Root>
